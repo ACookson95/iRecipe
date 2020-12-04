@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  cooktime: 1
+  preptime: 1
+  public: false
+  servings: 1
+  notes: MyText
+  user: one
+
+two:
+  name: MyString
+  description: MyText
+  cooktime: 1
+  preptime: 1
+  public: false
+  servings: 1
+  notes: MyText
+  user: two

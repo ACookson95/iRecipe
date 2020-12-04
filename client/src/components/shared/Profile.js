@@ -1,6 +1,6 @@
 import React from 'react';
 import { AuthConsumer } from "../../providers/AuthProvider";
-import { Link, withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import { Header, } from 'semantic-ui-react';
 import { Button } from 'semantic-ui-react';
 

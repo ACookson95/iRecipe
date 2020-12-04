@@ -1,7 +1,8 @@
 import React from 'react'
 import { AuthConsumer, } from "../../providers/AuthProvider";
-import { Menu, MenuItem, } from 'semantic-ui-react'
+import { Menu, } from 'semantic-ui-react'
 import { Link, withRouter, } from 'react-router-dom'
+import Logo from '../resources/images/iRecipe_logo.svg'
 
 class Navbar extends React.Component {
   
@@ -44,14 +45,16 @@ class Navbar extends React.Component {
   render() {
     return (
       <div>
-        <Menu pointing secondary>
-          <Link to='/'>
-            <Menu.Item
-              name='home'
-              id='home'
-              active={this.props.location.pathname === '/'}
+        <Link to='/'>
+          <div style={{ height: "75px", width: "500px"}}>
+            <img 
+              alt="logo"
+              height="75px"
+              src={Logo}
             />
-          </Link>
+          </div>
+        </Link>
+        <Menu pointing secondary>
             { this.rightNavItems() }
         </Menu>
       </div>
